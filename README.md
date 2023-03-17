@@ -5,17 +5,13 @@
 ## ✅ MEMBERS
 
 ![mazandi profile](http://mazandi.herokuapp.com/api?handle=gmtmoney2357)
-
 ![mazandi profile](http://mazandi.herokuapp.com/api?handle=cha3088)
 
 ![mazandi profile](http://mazandi.herokuapp.com/api?handle=arrrr180)
-
 ![mazandi profile](http://mazandi.herokuapp.com/api?handle=nyj500)
 
 ![mazandi profile](http://mazandi.herokuapp.com/api?handle=hda0104)
-
 ![mazandi profile](http://mazandi.herokuapp.com/api?handle=zozo501884)
-
 
 
 <br />
