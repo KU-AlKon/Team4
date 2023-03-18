@@ -34,7 +34,7 @@
 <br />
 <br />
 
-## ✅ commit 규칙
+## ✅ commit 규칙(Optional)
 - commit 메세지: `[문제 번호] 문제이름 / 티어`
 - 터미널에서 작성법: 
 ```
