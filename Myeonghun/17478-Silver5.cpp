@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <iostream>
 
 #define fastIo cin.tie(0), cout.tie(0), ios::sync_with_stdio(0)
@@ -47,3 +48,8 @@ int main() {
 
     recursiveFunction(N, 0);
 }
+=======
+//
+// Created by Mac on 4/2/23.
+//
+>>>>>>> 719f9e8d4653f90098127ca151c06c7bc957f041
