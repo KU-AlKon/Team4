@@ -24,6 +24,5 @@ int main() {
     fastIo;
 
     //입력
-    FILE *pFile = freopen("input.txt", "r", stdin);
 
 }
