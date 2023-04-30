@@ -15,9 +15,9 @@
 #include <limits>
 
 #define MOD 1000000007
-using ll = long long;
 #define fastIo cin.tie(0), cout.tie(0), ios::sync_with_stdio(0)
 
+using ll = long long;
 using namespace std;
 
 int main() {
