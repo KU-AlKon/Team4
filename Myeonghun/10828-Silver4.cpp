@@ -4,14 +4,14 @@
 
 using namespace std;
 
-class Queue {
+class Stack {
 private:
-    int* queue;
+    int* stack;
     int begin;
     int end;
 public:
-    Queue(int N) {
-        queue = new int[N];
+    Stack(int N) {
+        stack = new int[N];
         begin = N / 2;
         end = N / 2 - 1;
     }
@@ -20,28 +20,27 @@ public:
     void pop();
     void size();
     bool empty();
-    void front();
-    void back();
+    void top();
 
-    ~Queue() {
-        delete[] queue;
+    ~Stack() {
+        delete[] stack;
     }
 };
 
-void Queue::push(int num) {
-    queue[++end] = num;
+void Stack::push(int num) {
+    stack[++end] = num;
 }
 
-void Queue::pop() {
+void Stack::pop() {
     if (empty()) {
         cout << -1 << '\n';
     }
     else {
-        cout << queue[begin++] << '\n';
+        cout << stack[end--] << '\n';
     }
 }
 
-void Queue::size() {
+void Stack::size() {
     if (empty()) {
         cout << 0 << '\n';
     }
@@ -50,7 +49,7 @@ void Queue::size() {
     }
 }
 
-bool Queue::empty() {
+bool Stack::empty() {
     if (begin > end) {
         return true;
     }
@@ -59,32 +58,23 @@ bool Queue::empty() {
     }
 }
 
-void Queue::front() {
+void Stack::top() {
     if (empty()) {
         cout << -1 << '\n';
     }
     else {
-        cout << queue[begin] << '\n';
+        cout << stack[end] << '\n';
     }
 }
 
-void Queue::back() {
-    if (empty()) {
-        cout << -1 << '\n';
-    }
-    else {
-        cout << queue[end] << '\n';
-    }
-}
-
-//10845-큐-Silver4-https://www.acmicpc.net/problem/10845
+//10828-스택-Silver4-https://www.acmicpc.net/problem/10828
 
 int main() {
     fastIo;
 
     int N;
     cin >> N;
-    Queue queue(2 * N);
+    Stack stack(2 * N);
 
     for (int i = 0; i < N; ++i) {
         string cmd;
@@ -94,27 +84,23 @@ int main() {
             int num;
             cin >> num;
 
-            queue.push(num);
+            stack.push(num);
         }
 
         else if (cmd == "pop") {
-            queue.pop();
+            stack.pop();
         }
 
         else if (cmd == "size") {
-            queue.size();
+            stack.size();
         }
 
         else if (cmd == "empty") {
-            cout << queue.empty() << '\n';
+            cout << stack.empty() << '\n';
         }
 
-        else if (cmd == "front") {
-            queue.front();
-        }
-
-        else if (cmd == "back") {
-            queue.back();
+        else if (cmd == "top") {
+            stack.top();
         }
     }
 }
