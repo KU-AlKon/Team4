@@ -6,13 +6,13 @@
 using ll = long long;
 using namespace std;
 int N;
-ll arr[1000000];
+ll arr[1000001];
 ll input;
 int inputIdx;
 
 //D[i] = k인 값들 중 A[i]의 값이 가장 작은 값을 계속 저장
-ll lis[1000000];
-ll minValue[1000000];
+ll lis[1000001];
+ll minValue[1000001];
 int mid;
 int lastIdx;
 stack<ll> output;
