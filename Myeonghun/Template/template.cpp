@@ -24,5 +24,4 @@ int main() {
     fastIo;
 
     //입력
-
 }
