@@ -1,6 +1,5 @@
 #include <iostream>
 #include <algorithm>
-#include <cmath>
 
 #define fastIo cin.tie(0), cout.tie(0), ios::sync_with_stdio(0)
 
